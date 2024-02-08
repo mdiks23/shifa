@@ -1,3 +1,8 @@
+.btn{
+  height: 100%;
+  width: 100%;
+}
+
 * {
     /* Change your font family */
     font-family: sans-serif;
@@ -51,6 +56,7 @@ border-bottom: 2px solid white;
     font-weight: bold;
     color: #e7bf26;
 }
+
 .content-table tbody tr.deactive-row {
     font-weight: bold;
     color: white;
@@ -289,7 +295,7 @@ footer p font{
     padding-right: 12%;
     border-right: 3px solid #9796f0;
     position: absolute;
-    left: -16rem;
+    left: -12rem;
     top: -1rem;
   }
   .date-time-value {
@@ -297,7 +303,7 @@ footer p font{
     height: max-content;
     width: max-content;
     position: relative;
-    left: 30%;
+    left: 32%;
     top: -18px;
     text-align: center;
   }
@@ -403,20 +409,24 @@ footer p font{
             backface-visibility: hidden;
     opacity: 0;
     transform: scale(1.5) rotate(15deg);
-    -webkit-animation: slowFade 32s infinite;
-            animation: slowFade 32s infinite;
+    -webkit-animation: slowFade 20s infinite;
+            animation: slowFade 20s infinite;
+}
+.slowFade .slide:nth-child(4) img {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
 }
 .slowFade .slide:nth-child(3) img {
     -webkit-animation-delay: 8s;
             animation-delay: 8s;
 }
 .slowFade .slide:nth-child(2) img {
-    -webkit-animation-delay: 16s;
-            animation-delay: 16s;
+    -webkit-animation-delay: 12s;
+            animation-delay: 12s;
 }
 .slowFade .slide:nth-child(1) img {
-    -webkit-animation-delay: 24s;
-            animation-delay: 24s;
+    -webkit-animation-delay: 16s;
+            animation-delay: 16s;
 }
 @keyframes slowFade {
     25% {
@@ -592,8 +602,8 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  cell-padding: 1px;
-  border-spacing: 1cap;
+  cell-padding: 2px;
+  border-spacing: 2cap;
 }
   .sh {
   border: 1px solid #e7bf26;
